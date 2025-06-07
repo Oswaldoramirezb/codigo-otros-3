@@ -1,11 +1,11 @@
-input {
-  width: 500px;
-  height: 40px;
-  font-size: 18px;
+/* El input ahora usa las clases de Bootstrap, pero podemos personalizar si asi lo queremos */
+input.form-control {
+  font-size: 16px;
 }
 
 #lista-de-productos {
-  display: flex
+  display: flex;
+  /*faltaba punto y coma*/
 }
 
 .producto {
@@ -20,5 +20,6 @@ input {
 
 .producto img {
   width: 70%;
-  height: auto
+  height: auto;
+  /*faltaba punto y coma tambien*/
 }

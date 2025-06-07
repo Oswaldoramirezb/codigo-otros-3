@@ -1,15 +1,15 @@
 // Tenemos un li de productos
 
 const productos = [
-  { nombre: "Zapato negro", tipo: "zapato", color: "negro", img: "../img/taco-negro.jpg" }, //Usando rutas relativas para que funcione tanto en Live Server como en GitHub Pages
-  { nombre: "Zapato azul", tipo: "zapato", color: "azul", img: "../img/taco-azul.jpg" },
-  { nombre: "Bota negra", tipo: "bota", color: "negro", img: "../img/bota-negra.jpg" },
-  { nombre: "Bota azul", tipo: "bota", color: "azul", img: "../img/bota-azul.jpg" },
-  { nombre: "Zapato rojo", tipo: "zapato", color: "rojo", img: "../img/zapato-rojo.jpg" }
+  { nombre: "Zapato negro", tipo: "zapato", color: "negro", img: "img/taco-negro.jpg" }, //Corregida la ruta relativa
+  { nombre: "Zapato azul", tipo: "zapato", color: "azul", img: "img/taco-azul.jpg" },
+  { nombre: "Bota negra", tipo: "bota", color: "negro", img: "img/bota-negra.jpg" },
+  { nombre: "Bota azul", tipo: "bota", color: "azul", img: "img/bota-azul.jpg" },
+  { nombre: "Zapato rojo", tipo: "zapato", color: "rojo", img: "img/zapato-rojo.jpg" }
 ]
 
 const li = document.getElementById("lista-de-productos") // cambie de ByName  ById como aparecia en html
-const $i = document.querySelector('input'); //en mi input de html no tenemos la clase input, por lo que no puedo usar el querySelector (ahorita veo porque)
+const $i = document.querySelector('input'); // Selecciona el input por etiqueta HTML (no necesita clase)
 
 for (let i = 0; i < productos.length; i++) {
   var d = document.createElement("div")
